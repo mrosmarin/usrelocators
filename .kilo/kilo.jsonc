@@ -3,20 +3,16 @@
   "mcp": {
     "linear": {
       "type": "local",
-      "command": [
-        "npx",
-        "-y",
-        "mcp-remote",
-        "https://mcp.linear.app/mcp"
-      ]
+      "command": ["npx", "-y", "mcp-remote", "https://mcp.linear.app/mcp"],
+      "enabled": true
     },
     "github": {
       "type": "local",
-      "command": ["npx"],
-      "args": ["-y", "@modelcontextprotocol/server-github"],
-      "env": {
+      "command": ["npx", "-y", "@modelcontextprotocol/server-github"],
+      "environment": {
         "GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_TOKEN}"
-      }
+      },
+      "enabled": true
     }
   }
 }
