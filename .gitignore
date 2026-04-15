@@ -32,3 +32,5 @@ coverage/
 # Temporary
 tmp/
 temp/
+
+quiet-carry-core/

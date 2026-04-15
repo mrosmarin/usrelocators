@@ -2,12 +2,8 @@
   "$schema": "https://app.kilo.ai/config.json",
   "mcp": {
     "linear": {
-      "type": "remote",
-      "url": "https://mcp.linear.app/sse",
-      "enabled": true,
-      "headers": {
-        "Authorization": "${LINEAR_API_KEY}"
-      }
+      "type": "local",
+      "command": ["npx", "-y", "mcp-remote", "https://mcp.linear.app/mcp"]
     }
   }
 }
