@@ -13,6 +13,9 @@ services:
     # Overrides default command so things don't shut down after the process ends.
     command: sleep infinity
 
+    env_file:
+      - .env
+
     # Use proper Docker networking instead of network_mode: service:db
     # to ensure reliable DNS resolution in all environments
     depends_on:
